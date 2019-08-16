@@ -1,12 +1,9 @@
 
-
-let key = async () => {
-    const fs = require('fs');
-    let contents = fs.readFileSync('./testcipher.txt','utf8');
+async function key(textElement, outputElement){
+    console.log("HELLO");
     let engine = require("./engine");
-    let theKey = await engine(contents);
+    let theKey = await engine(textElement.value);
     console.log("The key is: " + theKey);
-};
-   
+    outputElement.innerHtml = theKey;
 
-key();
+};

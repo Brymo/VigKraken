@@ -1,4 +1,4 @@
-module.exports = async (cipherCode) => {
+async function key(cipherCode){
   
 
     var ascii = (chr) => {

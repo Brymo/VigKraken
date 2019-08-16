@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="engine.js"></script>
+</head>
+<body>
+    <div class="main_wrapper">
+        <div class="header" id="output">This is my website</div>
+        <textarea id="inputbox"type="text" class="cipher_input" placeholder="Enter your vignere ciphertext..."></textarea> 
+        <button id="finalise" type="button">Solve!</button>
+    </div>
+
+    
+    <script>
+
+        document.getElementById('finalise').onclick = async ()=>{
+            let inputString = document.getElementById("inputbox").value;
+            let output = document.getElementById("output"); 
+            output.innerHTML = await key(inputString);
+            
+        };
+    
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.header{
+    font-size: 2em;
+    font-weight: "strong";
+}
+
+.main_wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cipher_input{
+    width: 50%;
+    height: 30%;
+}
